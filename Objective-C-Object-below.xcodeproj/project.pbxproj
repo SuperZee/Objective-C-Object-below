@@ -15,6 +15,9 @@
 		044978611C4B7B440026C119 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 044978601C4B7B440026C119 /* Animal.m */; };
 		044978691C4B870F0026C119 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044978681C4B870F0026C119 /* main.m */; };
 		044978751C4B90C10026C119 /* NSString+lee.m in Sources */ = {isa = PBXBuildFile; fileRef = 044978741C4B90C10026C119 /* NSString+lee.m */; };
+		0449787D1C4BABC20026C119 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0449787C1C4BABC20026C119 /* main.m */; };
+		044978831C4BABC90026C119 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 044978821C4BABC90026C119 /* Person.m */; };
+		044978861C4BACE90026C119 /* Person+badboy.m in Sources */ = {isa = PBXBuildFile; fileRef = 044978851C4BACE90026C119 /* Person+badboy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +57,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		044978781C4BABC20026C119 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +85,12 @@
 		044978681C4B870F0026C119 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		044978731C4B90C10026C119 /* NSString+lee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+lee.h"; sourceTree = "<group>"; };
 		044978741C4B90C10026C119 /* NSString+lee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+lee.m"; sourceTree = "<group>"; };
+		0449787A1C4BABC20026C119 /* category访问私有方法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "category访问私有方法"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0449787C1C4BABC20026C119 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		044978811C4BABC90026C119 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		044978821C4BABC90026C119 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		044978841C4BACE90026C119 /* Person+badboy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+badboy.h"; sourceTree = "<group>"; };
+		044978851C4BACE90026C119 /* Person+badboy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+badboy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +122,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		044978771C4BABC20026C119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -114,6 +139,7 @@
 				044978481C4B71E20026C119 /* *description 处理对象 */,
 				044978591C4B757C0026C119 /* ==和isEqual方法 */,
 				044978671C4B870F0026C119 /* *类别category */,
+				0449787B1C4BABC20026C119 /* *category访问私有方法 */,
 				0449783A1C4B5CA80026C119 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,6 +151,7 @@
 				044978471C4B71E20026C119 /* description 处理对象 */,
 				044978581C4B757C0026C119 /* ==和isEqual方法 */,
 				044978661C4B870F0026C119 /* 类别与扩展 */,
+				0449787A1C4BABC20026C119 /* category访问私有方法 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,6 +196,19 @@
 			);
 			name = "*类别category";
 			path = "类别与扩展";
+			sourceTree = "<group>";
+		};
+		0449787B1C4BABC20026C119 /* *category访问私有方法 */ = {
+			isa = PBXGroup;
+			children = (
+				044978811C4BABC90026C119 /* Person.h */,
+				044978821C4BABC90026C119 /* Person.m */,
+				044978841C4BACE90026C119 /* Person+badboy.h */,
+				044978851C4BACE90026C119 /* Person+badboy.m */,
+				0449787C1C4BABC20026C119 /* main.m */,
+			);
+			name = "*category访问私有方法";
+			path = "category访问私有方法";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +282,23 @@
 			productReference = 044978661C4B870F0026C119 /* 类别与扩展 */;
 			productType = "com.apple.product-type.tool";
 		};
+		044978791C4BABC20026C119 /* category访问私有方法 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0449787E1C4BABC20026C119 /* Build configuration list for PBXNativeTarget "category访问私有方法" */;
+			buildPhases = (
+				044978761C4BABC20026C119 /* Sources */,
+				044978771C4BABC20026C119 /* Frameworks */,
+				044978781C4BABC20026C119 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "category访问私有方法";
+			productName = "category访问私有方法";
+			productReference = 0449787A1C4BABC20026C119 /* category访问私有方法 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -263,6 +320,9 @@
 					044978651C4B870F0026C119 = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					044978791C4BABC20026C119 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 				};
 			};
 			buildConfigurationList = 044978341C4B5CA80026C119 /* Build configuration list for PBXProject "Objective-C-Object-below" */;
@@ -281,6 +341,7 @@
 				044978461C4B71E20026C119 /* description 处理对象 */,
 				044978571C4B757C0026C119 /* ==和isEqual方法 */,
 				044978651C4B870F0026C119 /* 类别与扩展 */,
+				044978791C4BABC20026C119 /* category访问私有方法 */,
 			);
 		};
 /* End PBXProject section */
@@ -319,6 +380,16 @@
 			files = (
 				044978751C4B90C10026C119 /* NSString+lee.m in Sources */,
 				044978691C4B870F0026C119 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044978761C4BABC20026C119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044978831C4BABC90026C119 /* Person.m in Sources */,
+				044978861C4BACE90026C119 /* Person+badboy.m in Sources */,
+				0449787D1C4BABC20026C119 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +531,20 @@
 			};
 			name = Release;
 		};
+		0449787F1C4BABC20026C119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		044978801C4BABC20026C119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -501,6 +586,14 @@
 			buildConfigurations = (
 				0449786B1C4B870F0026C119 /* Debug */,
 				0449786C1C4B870F0026C119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0449787E1C4BABC20026C119 /* Build configuration list for PBXNativeTarget "category访问私有方法" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0449787F1C4BABC20026C119 /* Debug */,
+				044978801C4BABC20026C119 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
