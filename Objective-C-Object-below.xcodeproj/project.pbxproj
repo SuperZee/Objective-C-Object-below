@@ -12,6 +12,7 @@
 		044978501C4B72470026C119 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0449784F1C4B72470026C119 /* Person.m */; };
 		044978531C4B74130026C119 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 044978521C4B74130026C119 /* Cat.m */; };
 		0449785B1C4B757C0026C119 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0449785A1C4B757C0026C119 /* main.m */; };
+		044978611C4B7B440026C119 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 044978601C4B7B440026C119 /* Animal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +56,8 @@
 		044978521C4B74130026C119 /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
 		044978581C4B757C0026C119 /* ==和isEqual方法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "==和isEqual方法"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0449785A1C4B757C0026C119 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0449785F1C4B7B440026C119 /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		044978601C4B7B440026C119 /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 		044978591C4B757C0026C119 /* ==和isEqual方法 */ = {
 			isa = PBXGroup;
 			children = (
+				0449785F1C4B7B440026C119 /* Animal.h */,
+				044978601C4B7B440026C119 /* Animal.m */,
 				0449785A1C4B757C0026C119 /* main.m */,
 			);
 			path = "==和isEqual方法";
@@ -248,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0449785B1C4B757C0026C119 /* main.m in Sources */,
+				044978611C4B7B440026C119 /* Animal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
