@@ -18,6 +18,8 @@
 		0449787D1C4BABC20026C119 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0449787C1C4BABC20026C119 /* main.m */; };
 		044978831C4BABC90026C119 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 044978821C4BABC90026C119 /* Person.m */; };
 		044978861C4BACE90026C119 /* Person+badboy.m in Sources */ = {isa = PBXBuildFile; fileRef = 044978851C4BACE90026C119 /* Person+badboy.m */; };
+		0449788E1C4BAE5F0026C119 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0449788D1C4BAE5F0026C119 /* main.m */; };
+		0449789F1C4BB4050026C119 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 0449789E1C4BB4050026C119 /* Car.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,6 +68,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		044978891C4BAE5F0026C119 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +102,11 @@
 		044978821C4BABC90026C119 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		044978841C4BACE90026C119 /* Person+badboy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+badboy.h"; sourceTree = "<group>"; };
 		044978851C4BACE90026C119 /* Person+badboy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+badboy.m"; sourceTree = "<group>"; };
+		0449788B1C4BAE5F0026C119 /* 扩展 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "扩展"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0449788D1C4BAE5F0026C119 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0449789D1C4BB4050026C119 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		0449789E1C4BB4050026C119 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		044978A91C4BB8670026C119 /* Car+drive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Car+drive.h"; path = "../Car+drive.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +145,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		044978881C4BAE5F0026C119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -140,6 +163,7 @@
 				044978591C4B757C0026C119 /* ==和isEqual方法 */,
 				044978671C4B870F0026C119 /* *类别category */,
 				0449787B1C4BABC20026C119 /* *category访问私有方法 */,
+				0449788C1C4BAE5F0026C119 /* 扩展 */,
 				0449783A1C4B5CA80026C119 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -152,6 +176,7 @@
 				044978581C4B757C0026C119 /* ==和isEqual方法 */,
 				044978661C4B870F0026C119 /* 类别与扩展 */,
 				0449787A1C4BABC20026C119 /* category访问私有方法 */,
+				0449788B1C4BAE5F0026C119 /* 扩展 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,6 +234,17 @@
 			);
 			name = "*category访问私有方法";
 			path = "category访问私有方法";
+			sourceTree = "<group>";
+		};
+		0449788C1C4BAE5F0026C119 /* 扩展 */ = {
+			isa = PBXGroup;
+			children = (
+				044978A91C4BB8670026C119 /* Car+drive.h */,
+				0449789D1C4BB4050026C119 /* Car.h */,
+				0449789E1C4BB4050026C119 /* Car.m */,
+				0449788D1C4BAE5F0026C119 /* main.m */,
+			);
+			path = "扩展";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +335,23 @@
 			productReference = 0449787A1C4BABC20026C119 /* category访问私有方法 */;
 			productType = "com.apple.product-type.tool";
 		};
+		0449788A1C4BAE5F0026C119 /* 扩展 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0449788F1C4BAE5F0026C119 /* Build configuration list for PBXNativeTarget "扩展" */;
+			buildPhases = (
+				044978871C4BAE5F0026C119 /* Sources */,
+				044978881C4BAE5F0026C119 /* Frameworks */,
+				044978891C4BAE5F0026C119 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "扩展";
+			productName = "扩展";
+			productReference = 0449788B1C4BAE5F0026C119 /* 扩展 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -323,6 +376,9 @@
 					044978791C4BABC20026C119 = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					0449788A1C4BAE5F0026C119 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 				};
 			};
 			buildConfigurationList = 044978341C4B5CA80026C119 /* Build configuration list for PBXProject "Objective-C-Object-below" */;
@@ -342,6 +398,7 @@
 				044978571C4B757C0026C119 /* ==和isEqual方法 */,
 				044978651C4B870F0026C119 /* 类别与扩展 */,
 				044978791C4BABC20026C119 /* category访问私有方法 */,
+				0449788A1C4BAE5F0026C119 /* 扩展 */,
 			);
 		};
 /* End PBXProject section */
@@ -390,6 +447,15 @@
 				044978831C4BABC90026C119 /* Person.m in Sources */,
 				044978861C4BACE90026C119 /* Person+badboy.m in Sources */,
 				0449787D1C4BABC20026C119 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044978871C4BAE5F0026C119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0449789F1C4BB4050026C119 /* Car.m in Sources */,
+				0449788E1C4BAE5F0026C119 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +611,22 @@
 			};
 			name = Release;
 		};
+		044978901C4BAE5F0026C119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		044978911C4BAE5F0026C119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -594,6 +676,14 @@
 			buildConfigurations = (
 				0449787F1C4BABC20026C119 /* Debug */,
 				044978801C4BABC20026C119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0449788F1C4BAE5F0026C119 /* Build configuration list for PBXNativeTarget "扩展" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044978901C4BAE5F0026C119 /* Debug */,
+				044978911C4BAE5F0026C119 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
