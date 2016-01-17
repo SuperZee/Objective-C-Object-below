@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0449783D1C4B5CA80026C119 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0449783C1C4B5CA80026C119 /* main.m */; };
 		0449784A1C4B71E20026C119 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044978491C4B71E20026C119 /* main.m */; };
+		044978501C4B72470026C119 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0449784F1C4B72470026C119 /* Person.m */; };
+		044978531C4B74130026C119 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 044978521C4B74130026C119 /* Cat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +39,10 @@
 		0449783C1C4B5CA80026C119 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		044978471C4B71E20026C119 /* description 处理对象 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "description 处理对象"; sourceTree = BUILT_PRODUCTS_DIR; };
 		044978491C4B71E20026C119 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0449784E1C4B72470026C119 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		0449784F1C4B72470026C119 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		044978511C4B74130026C119 /* Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		044978521C4B74130026C119 /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,10 @@
 		044978481C4B71E20026C119 /* description 处理对象 */ = {
 			isa = PBXGroup;
 			children = (
+				0449784E1C4B72470026C119 /* Person.h */,
+				0449784F1C4B72470026C119 /* Person.m */,
+				044978511C4B74130026C119 /* Cat.h */,
+				044978521C4B74130026C119 /* Cat.m */,
 				044978491C4B71E20026C119 /* main.m */,
 			);
 			path = "description 处理对象";
@@ -176,6 +186,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044978531C4B74130026C119 /* Cat.m in Sources */,
+				044978501C4B72470026C119 /* Person.m in Sources */,
 				0449784A1C4B71E20026C119 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
