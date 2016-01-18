@@ -25,6 +25,8 @@
 		044978BF1C4BC8480026C119 /* PrintMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 044978BE1C4BC8480026C119 /* PrintMachine.m */; };
 		04F84B621C4C9A2C00093394 /* Boss.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F84B611C4C9A2C00093394 /* Boss.m */; };
 		04F84B651C4C9B2200093394 /* Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F84B641C4C9B2200093394 /* Sec.m */; };
+		04F84B6D1C4CA3E400093394 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F84B6C1C4CA3E400093394 /* main.m */; };
+		04F84B741C4CA45100093394 /* Apple.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F84B731C4CA45100093394 /* Apple.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -109,6 +111,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		04F84B681C4CA3E300093394 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -154,6 +165,11 @@
 		04F84B611C4C9A2C00093394 /* Boss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Boss.m; sourceTree = "<group>"; };
 		04F84B631C4C9B2200093394 /* Sec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sec.h; sourceTree = "<group>"; };
 		04F84B641C4C9B2200093394 /* Sec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sec.m; sourceTree = "<group>"; };
+		04F84B6A1C4CA3E300093394 /* 异常机制 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "异常机制"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F84B6C1C4CA3E400093394 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04F84B711C4CA41000093394 /* Eatable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eatable.h; sourceTree = "<group>"; };
+		04F84B721C4CA45100093394 /* Apple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apple.h; sourceTree = "<group>"; };
+		04F84B731C4CA45100093394 /* Apple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Apple.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +236,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04F84B671C4CA3E300093394 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -247,6 +270,7 @@
 				0449788C1C4BAE5F0026C119 /* 扩展 */,
 				044978AF1C4BC4B90026C119 /* 协议 */,
 				044498DA1C4C95F000739993 /* *委托 */,
+				04F84B6B1C4CA3E400093394 /* 异常机制 */,
 				0449783A1C4B5CA80026C119 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -263,6 +287,7 @@
 				044978AE1C4BC4B90026C119 /* 协议 */,
 				0444988D1C4C888C00739993 /* 委托delegate */,
 				044498D91C4C95F000739993 /* *委托 */,
+				04F84B6A1C4CA3E300093394 /* 异常机制 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -344,6 +369,17 @@
 				044978BE1C4BC8480026C119 /* PrintMachine.m */,
 			);
 			path = "协议";
+			sourceTree = "<group>";
+		};
+		04F84B6B1C4CA3E400093394 /* 异常机制 */ = {
+			isa = PBXGroup;
+			children = (
+				04F84B6C1C4CA3E400093394 /* main.m */,
+				04F84B711C4CA41000093394 /* Eatable.h */,
+				04F84B721C4CA45100093394 /* Apple.h */,
+				04F84B731C4CA45100093394 /* Apple.m */,
+			);
+			path = "异常机制";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -502,6 +538,23 @@
 			productReference = 044978AE1C4BC4B90026C119 /* 协议 */;
 			productType = "com.apple.product-type.tool";
 		};
+		04F84B691C4CA3E300093394 /* 异常机制 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F84B6E1C4CA3E400093394 /* Build configuration list for PBXNativeTarget "异常机制" */;
+			buildPhases = (
+				04F84B661C4CA3E300093394 /* Sources */,
+				04F84B671C4CA3E300093394 /* Frameworks */,
+				04F84B681C4CA3E300093394 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "异常机制";
+			productName = "异常机制";
+			productReference = 04F84B6A1C4CA3E300093394 /* 异常机制 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -538,6 +591,9 @@
 					044978AD1C4BC4B90026C119 = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					04F84B691C4CA3E300093394 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 				};
 			};
 			buildConfigurationList = 044978341C4B5CA80026C119 /* Build configuration list for PBXProject "Objective-C-Object-below" */;
@@ -561,6 +617,7 @@
 				044978AD1C4BC4B90026C119 /* 协议 */,
 				0444988C1C4C888C00739993 /* 委托delegate */,
 				044498D81C4C95F000739993 /* *委托 */,
+				04F84B691C4CA3E300093394 /* 异常机制 */,
 			);
 		};
 /* End PBXProject section */
@@ -644,6 +701,15 @@
 			files = (
 				044978B11C4BC4B90026C119 /* main.m in Sources */,
 				044978BF1C4BC8480026C119 /* PrintMachine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F84B661C4CA3E300093394 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F84B741C4CA45100093394 /* Apple.m in Sources */,
+				04F84B6D1C4CA3E400093394 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -857,6 +923,20 @@
 			};
 			name = Release;
 		};
+		04F84B6F1C4CA3E400093394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04F84B701C4CA3E400093394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -949,6 +1029,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		04F84B6E1C4CA3E400093394 /* Build configuration list for PBXNativeTarget "异常机制" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F84B6F1C4CA3E400093394 /* Debug */,
+				04F84B701C4CA3E400093394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
