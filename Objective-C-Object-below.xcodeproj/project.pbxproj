@@ -32,6 +32,8 @@
 		04F84BA61C4CB34100093394 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F84BA51C4CB34100093394 /* main.m */; };
 		04F84BAE1C4CB56400093394 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F84BAD1C4CB56400093394 /* main.m */; };
 		04F84BB51C4CB9CA00093394 /* Apple.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F84BB31C4CB9CA00093394 /* Apple.m */; };
+		04F84BBD1C4CC08F00093394 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F84BBC1C4CC08F00093394 /* main.m */; };
+		04F84BC31C4CC2A500093394 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F84BC21C4CC2A500093394 /* Car.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -143,6 +145,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		04F84BB81C4CC08F00093394 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -204,6 +215,10 @@
 		04F84BB21C4CB9CA00093394 /* Apple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apple.h; sourceTree = "<group>"; };
 		04F84BB31C4CB9CA00093394 /* Apple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Apple.m; sourceTree = "<group>"; };
 		04F84BB41C4CB9CA00093394 /* Eatable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eatable.h; sourceTree = "<group>"; };
+		04F84BBA1C4CC08F00093394 /* 动态调用方法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "动态调用方法"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F84BBC1C4CC08F00093394 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04F84BC11C4CC2A500093394 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		04F84BC21C4CC2A500093394 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +306,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04F84BB71C4CC08F00093394 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -321,6 +343,7 @@
 				04F84B6B1C4CA3E400093394 /* 异常机制 */,
 				04F84B981C4CB17D00093394 /* 自定义异常 */,
 				04F84BAC1C4CB56400093394 /* *反射机制 */,
+				04F84BBB1C4CC08F00093394 /* 动态调用方法 */,
 				0449783A1C4B5CA80026C119 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -340,6 +363,7 @@
 				04F84B6A1C4CA3E300093394 /* 异常机制 */,
 				04F84B971C4CB17D00093394 /* 自定义异常 */,
 				04F84BAB1C4CB56400093394 /* *反射机制 */,
+				04F84BBA1C4CC08F00093394 /* 动态调用方法 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -455,6 +479,16 @@
 				04F84BAD1C4CB56400093394 /* main.m */,
 			);
 			path = "*反射机制";
+			sourceTree = "<group>";
+		};
+		04F84BBB1C4CC08F00093394 /* 动态调用方法 */ = {
+			isa = PBXGroup;
+			children = (
+				04F84BBC1C4CC08F00093394 /* main.m */,
+				04F84BC11C4CC2A500093394 /* Car.h */,
+				04F84BC21C4CC2A500093394 /* Car.m */,
+			);
+			path = "动态调用方法";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -664,6 +698,23 @@
 			productReference = 04F84BAB1C4CB56400093394 /* *反射机制 */;
 			productType = "com.apple.product-type.tool";
 		};
+		04F84BB91C4CC08F00093394 /* 动态调用方法 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F84BBE1C4CC08F00093394 /* Build configuration list for PBXNativeTarget "动态调用方法" */;
+			buildPhases = (
+				04F84BB61C4CC08F00093394 /* Sources */,
+				04F84BB71C4CC08F00093394 /* Frameworks */,
+				04F84BB81C4CC08F00093394 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "动态调用方法";
+			productName = "动态调用方法";
+			productReference = 04F84BBA1C4CC08F00093394 /* 动态调用方法 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -709,6 +760,9 @@
 					04F84BAA1C4CB56400093394 = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					04F84BB91C4CC08F00093394 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 				};
 			};
 			buildConfigurationList = 044978341C4B5CA80026C119 /* Build configuration list for PBXProject "Objective-C-Object-below" */;
@@ -735,6 +789,7 @@
 				04F84B691C4CA3E300093394 /* 异常机制 */,
 				04F84B961C4CB17D00093394 /* 自定义异常 */,
 				04F84BAA1C4CB56400093394 /* *反射机制 */,
+				04F84BB91C4CC08F00093394 /* 动态调用方法 */,
 			);
 		};
 /* End PBXProject section */
@@ -846,6 +901,15 @@
 			files = (
 				04F84BB51C4CB9CA00093394 /* Apple.m in Sources */,
 				04F84BAE1C4CB56400093394 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F84BB61C4CC08F00093394 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F84BC31C4CC2A500093394 /* Car.m in Sources */,
+				04F84BBD1C4CC08F00093394 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1106,6 +1170,20 @@
 			};
 			name = Release;
 		};
+		04F84BBF1C4CC08F00093394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04F84BC01C4CC08F00093394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1220,6 +1298,14 @@
 			buildConfigurations = (
 				04F84BB01C4CB56400093394 /* Debug */,
 				04F84BB11C4CB56400093394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04F84BBE1C4CC08F00093394 /* Build configuration list for PBXNativeTarget "动态调用方法" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F84BBF1C4CC08F00093394 /* Debug */,
+				04F84BC01C4CC08F00093394 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
