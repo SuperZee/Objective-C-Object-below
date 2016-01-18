@@ -27,6 +27,9 @@
 		04F84B651C4C9B2200093394 /* Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F84B641C4C9B2200093394 /* Sec.m */; };
 		04F84B6D1C4CA3E400093394 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F84B6C1C4CA3E400093394 /* main.m */; };
 		04F84B741C4CA45100093394 /* Apple.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F84B731C4CA45100093394 /* Apple.m */; };
+		04F84BA11C4CB19A00093394 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F84BA01C4CB19A00093394 /* Person.m */; };
+		04F84BA41C4CB30D00093394 /* MyException.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F84BA31C4CB30D00093394 /* MyException.m */; };
+		04F84BA61C4CB34100093394 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F84BA51C4CB34100093394 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -120,6 +123,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		04F84B951C4CB17D00093394 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -152,7 +164,6 @@
 		0449788D1C4BAE5F0026C119 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0449789D1C4BB4050026C119 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		0449789E1C4BB4050026C119 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
-		044978A91C4BB8670026C119 /* Car+drive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Car+drive.h"; path = "../Car+drive.h"; sourceTree = "<group>"; };
 		044978AE1C4BC4B90026C119 /* 协议 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "协议"; sourceTree = BUILT_PRODUCTS_DIR; };
 		044978B01C4BC4B90026C119 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		044978BA1C4BC7030026C119 /* Output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Output.h; sourceTree = "<group>"; };
@@ -170,6 +181,13 @@
 		04F84B711C4CA41000093394 /* Eatable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eatable.h; sourceTree = "<group>"; };
 		04F84B721C4CA45100093394 /* Apple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apple.h; sourceTree = "<group>"; };
 		04F84B731C4CA45100093394 /* Apple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Apple.m; sourceTree = "<group>"; };
+		04F84B921C4CB15A00093394 /* Car+drive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Car+drive.h"; sourceTree = "<group>"; };
+		04F84B971C4CB17D00093394 /* 自定义异常 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "自定义异常"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F84B9F1C4CB19A00093394 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		04F84BA01C4CB19A00093394 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		04F84BA21C4CB1C200093394 /* MyException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyException.h; sourceTree = "<group>"; };
+		04F84BA31C4CB30D00093394 /* MyException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyException.m; sourceTree = "<group>"; };
+		04F84BA51C4CB34100093394 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +261,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04F84B941C4CB17D00093394 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -271,6 +296,7 @@
 				044978AF1C4BC4B90026C119 /* 协议 */,
 				044498DA1C4C95F000739993 /* *委托 */,
 				04F84B6B1C4CA3E400093394 /* 异常机制 */,
+				04F84B981C4CB17D00093394 /* 自定义异常 */,
 				0449783A1C4B5CA80026C119 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -288,6 +314,7 @@
 				0444988D1C4C888C00739993 /* 委托delegate */,
 				044498D91C4C95F000739993 /* *委托 */,
 				04F84B6A1C4CA3E300093394 /* 异常机制 */,
+				04F84B971C4CB17D00093394 /* 自定义异常 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -350,7 +377,7 @@
 		0449788C1C4BAE5F0026C119 /* 扩展 */ = {
 			isa = PBXGroup;
 			children = (
-				044978A91C4BB8670026C119 /* Car+drive.h */,
+				04F84B921C4CB15A00093394 /* Car+drive.h */,
 				0449789D1C4BB4050026C119 /* Car.h */,
 				0449789E1C4BB4050026C119 /* Car.m */,
 				0449788D1C4BAE5F0026C119 /* main.m */,
@@ -380,6 +407,18 @@
 				04F84B731C4CA45100093394 /* Apple.m */,
 			);
 			path = "异常机制";
+			sourceTree = "<group>";
+		};
+		04F84B981C4CB17D00093394 /* 自定义异常 */ = {
+			isa = PBXGroup;
+			children = (
+				04F84BA51C4CB34100093394 /* main.m */,
+				04F84B9F1C4CB19A00093394 /* Person.h */,
+				04F84BA01C4CB19A00093394 /* Person.m */,
+				04F84BA31C4CB30D00093394 /* MyException.m */,
+				04F84BA21C4CB1C200093394 /* MyException.h */,
+			);
+			path = "自定义异常";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -555,6 +594,23 @@
 			productReference = 04F84B6A1C4CA3E300093394 /* 异常机制 */;
 			productType = "com.apple.product-type.tool";
 		};
+		04F84B961C4CB17D00093394 /* 自定义异常 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F84B9B1C4CB17D00093394 /* Build configuration list for PBXNativeTarget "自定义异常" */;
+			buildPhases = (
+				04F84B931C4CB17D00093394 /* Sources */,
+				04F84B941C4CB17D00093394 /* Frameworks */,
+				04F84B951C4CB17D00093394 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "自定义异常";
+			productName = "自定义异常";
+			productReference = 04F84B971C4CB17D00093394 /* 自定义异常 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -594,6 +650,9 @@
 					04F84B691C4CA3E300093394 = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					04F84B961C4CB17D00093394 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 				};
 			};
 			buildConfigurationList = 044978341C4B5CA80026C119 /* Build configuration list for PBXProject "Objective-C-Object-below" */;
@@ -618,6 +677,7 @@
 				0444988C1C4C888C00739993 /* 委托delegate */,
 				044498D81C4C95F000739993 /* *委托 */,
 				04F84B691C4CA3E300093394 /* 异常机制 */,
+				04F84B961C4CB17D00093394 /* 自定义异常 */,
 			);
 		};
 /* End PBXProject section */
@@ -710,6 +770,16 @@
 			files = (
 				04F84B741C4CA45100093394 /* Apple.m in Sources */,
 				04F84B6D1C4CA3E400093394 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F84B931C4CB17D00093394 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F84BA11C4CB19A00093394 /* Person.m in Sources */,
+				04F84BA61C4CB34100093394 /* main.m in Sources */,
+				04F84BA41C4CB30D00093394 /* MyException.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -819,6 +889,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -937,6 +1008,24 @@
 			};
 			name = Release;
 		};
+		04F84B9C1C4CB17D00093394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "x86_64 i386";
+			};
+			name = Debug;
+		};
+		04F84B9D1C4CB17D00093394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "x86_64 i386";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1035,6 +1124,14 @@
 			buildConfigurations = (
 				04F84B6F1C4CA3E400093394 /* Debug */,
 				04F84B701C4CA3E400093394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04F84B9B1C4CB17D00093394 /* Build configuration list for PBXNativeTarget "自定义异常" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F84B9C1C4CB17D00093394 /* Debug */,
+				04F84B9D1C4CB17D00093394 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
