@@ -23,6 +23,8 @@
 		0449789F1C4BB4050026C119 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 0449789E1C4BB4050026C119 /* Car.m */; };
 		044978B11C4BC4B90026C119 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044978B01C4BC4B90026C119 /* main.m */; };
 		044978BF1C4BC8480026C119 /* PrintMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 044978BE1C4BC8480026C119 /* PrintMachine.m */; };
+		04747DF81C4CD8D8008E89A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04747DF71C4CD8D8008E89A8 /* main.m */; };
+		04747DFE1C4CDCE9008E89A8 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 04747DFD1C4CDCE9008E89A8 /* Item.m */; };
 		04F84B621C4C9A2C00093394 /* Boss.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F84B611C4C9A2C00093394 /* Boss.m */; };
 		04F84B651C4C9B2200093394 /* Sec.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F84B641C4C9B2200093394 /* Sec.m */; };
 		04F84B6D1C4CA3E400093394 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F84B6C1C4CA3E400093394 /* main.m */; };
@@ -118,6 +120,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		04747DF31C4CD8D8008E89A8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		04F84B681C4CA3E300093394 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,6 +204,10 @@
 		044978BC1C4BC7D30026C119 /* Printable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Printable.h; sourceTree = "<group>"; };
 		044978BD1C4BC8480026C119 /* PrintMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintMachine.h; sourceTree = "<group>"; };
 		044978BE1C4BC8480026C119 /* PrintMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintMachine.m; sourceTree = "<group>"; };
+		04747DF51C4CD8D8008E89A8 /* *手动内存管理 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "*手动内存管理"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04747DF71C4CD8D8008E89A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04747DFC1C4CDCE9008E89A8 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		04747DFD1C4CDCE9008E89A8 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		04F84B5F1C4C995800093394 /* SecProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecProtocol.h; sourceTree = "<group>"; };
 		04F84B601C4C9A2C00093394 /* Boss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Boss.h; sourceTree = "<group>"; };
 		04F84B611C4C9A2C00093394 /* Boss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Boss.m; sourceTree = "<group>"; };
@@ -285,6 +300,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04747DF21C4CD8D8008E89A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04F84B671C4CA3E300093394 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -344,6 +366,7 @@
 				04F84B981C4CB17D00093394 /* 自定义异常 */,
 				04F84BAC1C4CB56400093394 /* *反射机制 */,
 				04F84BBB1C4CC08F00093394 /* 动态调用方法 */,
+				04747DF61C4CD8D8008E89A8 /* *手动内存管理 */,
 				0449783A1C4B5CA80026C119 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -364,6 +387,7 @@
 				04F84B971C4CB17D00093394 /* 自定义异常 */,
 				04F84BAB1C4CB56400093394 /* *反射机制 */,
 				04F84BBA1C4CC08F00093394 /* 动态调用方法 */,
+				04747DF51C4CD8D8008E89A8 /* *手动内存管理 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -445,6 +469,16 @@
 				044978BE1C4BC8480026C119 /* PrintMachine.m */,
 			);
 			path = "协议";
+			sourceTree = "<group>";
+		};
+		04747DF61C4CD8D8008E89A8 /* *手动内存管理 */ = {
+			isa = PBXGroup;
+			children = (
+				04747DFC1C4CDCE9008E89A8 /* Item.h */,
+				04747DFD1C4CDCE9008E89A8 /* Item.m */,
+				04747DF71C4CD8D8008E89A8 /* main.m */,
+			);
+			path = "*手动内存管理";
 			sourceTree = "<group>";
 		};
 		04F84B6B1C4CA3E400093394 /* 异常机制 */ = {
@@ -647,6 +681,23 @@
 			productReference = 044978AE1C4BC4B90026C119 /* 协议 */;
 			productType = "com.apple.product-type.tool";
 		};
+		04747DF41C4CD8D8008E89A8 /* *手动内存管理 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04747DFB1C4CD8D8008E89A8 /* Build configuration list for PBXNativeTarget "*手动内存管理" */;
+			buildPhases = (
+				04747DF11C4CD8D8008E89A8 /* Sources */,
+				04747DF21C4CD8D8008E89A8 /* Frameworks */,
+				04747DF31C4CD8D8008E89A8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "*手动内存管理";
+			productName = "*手动内存管理";
+			productReference = 04747DF51C4CD8D8008E89A8 /* *手动内存管理 */;
+			productType = "com.apple.product-type.tool";
+		};
 		04F84B691C4CA3E300093394 /* 异常机制 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04F84B6E1C4CA3E400093394 /* Build configuration list for PBXNativeTarget "异常机制" */;
@@ -751,6 +802,9 @@
 					044978AD1C4BC4B90026C119 = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					04747DF41C4CD8D8008E89A8 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					04F84B691C4CA3E300093394 = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -790,6 +844,7 @@
 				04F84B961C4CB17D00093394 /* 自定义异常 */,
 				04F84BAA1C4CB56400093394 /* *反射机制 */,
 				04F84BB91C4CC08F00093394 /* 动态调用方法 */,
+				04747DF41C4CD8D8008E89A8 /* *手动内存管理 */,
 			);
 		};
 /* End PBXProject section */
@@ -873,6 +928,15 @@
 			files = (
 				044978B11C4BC4B90026C119 /* main.m in Sources */,
 				044978BF1C4BC8480026C119 /* PrintMachine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04747DF11C4CD8D8008E89A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04747DFE1C4CDCE9008E89A8 /* Item.m in Sources */,
+				04747DF81C4CD8D8008E89A8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1124,6 +1188,22 @@
 			};
 			name = Release;
 		};
+		04747DF91C4CD8D8008E89A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04747DFA1C4CD8D8008E89A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		04F84B6F1C4CA3E400093394 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1277,6 +1357,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		04747DFB1C4CD8D8008E89A8 /* Build configuration list for PBXNativeTarget "*手动内存管理" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04747DF91C4CD8D8008E89A8 /* Debug */,
+				04747DFA1C4CD8D8008E89A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		04F84B6E1C4CA3E400093394 /* Build configuration list for PBXNativeTarget "异常机制" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1284,6 +1372,7 @@
 				04F84B701C4CA3E400093394 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04F84B9B1C4CB17D00093394 /* Build configuration list for PBXNativeTarget "自定义异常" */ = {
 			isa = XCConfigurationList;
@@ -1292,6 +1381,7 @@
 				04F84B9D1C4CB17D00093394 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04F84BAF1C4CB56400093394 /* Build configuration list for PBXNativeTarget "*反射机制" */ = {
 			isa = XCConfigurationList;
@@ -1300,6 +1390,7 @@
 				04F84BB11C4CB56400093394 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04F84BBE1C4CC08F00093394 /* Build configuration list for PBXNativeTarget "动态调用方法" */ = {
 			isa = XCConfigurationList;
@@ -1308,6 +1399,7 @@
 				04F84BC01C4CC08F00093394 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

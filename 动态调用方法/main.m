@@ -6,8 +6,7 @@
 //  Copyright © 2016年 SpiColorPendra. All rights reserved.
 //
 
-//#import <Foundation/Foundation.h>
-#import <objc/message.h>
+#import <Foundation/Foundation.h>
 #import "Car.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {

@@ -7,7 +7,7 @@
 //
 
 #import "Car.h"
-#import <objc/message.h>
+#import <objc/objc-runtime.h>
 @implementation Car
 - (void) move:(NSString*) count
 {
@@ -28,8 +28,7 @@
     //使用objc_msgSend调用move:方法
     //objc_msgSend();
     // objc_msgSend()
-    objc_msgSend(self,@selector(move:),[NSNumber numberWithInt:3]);
-    
+    id a = objc_msgSend(self,@selector(move:),[NSNumber numberWithInt:3]);
     NSLog(@"正在加速....%g",factor);
     return 100 *factor;
 }
